@@ -50,9 +50,9 @@
 
             onDisconnected: function () {
                 var result = this._super.onDisconnected.apply(this, arguments);
+                var view = converse.chatboxviews.get('controlbox');
+                view.model.set({connected:false});
                 if (result === 'disconnected') {
-                    var view = converse.chatboxviews.get('controlbox');
-                    view.model.set({connected:false});
                     view.$('#controlbox-tabs').empty();
                     view.renderLoginPanel();
                 }

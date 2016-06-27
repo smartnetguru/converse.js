@@ -69,7 +69,9 @@ require([
             require([
                 "console-runner",
                 //"spec/transcripts",
-                "spec/converse",
+                // "spec/converse",
+                "spec/bookmarks",
+                /*
                 "spec/headline",
                 "spec/disco",
                 "spec/protocol",
@@ -85,6 +87,7 @@ require([
                 "spec/ping",
                 "spec/register",
                 "spec/xmppstatus",
+                */
             ], function () {
                 // Stub the trimChat method. It causes havoc when running with
                 // phantomJS.

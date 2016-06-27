@@ -45,6 +45,7 @@ require.config({
         
         // Converse
         "converse-api":             "src/converse-api",
+        "converse-bookmarks":       "src/converse-bookmarks",
         "converse-chatview":        "src/converse-chatview",
         "converse-controlbox":      "src/converse-controlbox",
         "converse-core":            "src/converse-core",
@@ -128,6 +129,7 @@ require.config({
         "chatarea":                 "src/templates/chatarea",
         "chatbox":                  "src/templates/chatbox",
         "chatroom":                 "src/templates/chatroom",
+        "chatroom_bookmark_form":   "src/templates/chatroom_bookmark_form",
         "chatroom_form":            "src/templates/chatroom_form",
         "chatroom_password_form":   "src/templates/chatroom_password_form",
         "chatroom_sidebar":         "src/templates/chatroom_sidebar",
@@ -237,6 +239,7 @@ if (typeof define !== 'undefined') {
 
         "converse-chatview",    // Renders standalone chat boxes for single user chat
         "converse-controlbox",  // The control box
+        "converse-bookmarks",   // XEP-0048 Bookmarks
         "converse-mam",         // XEP-0313 Message Archive Management
         "converse-muc",         // XEP-0045 Multi-user chat
         "converse-vcard",       // XEP-0054 VCard-temp

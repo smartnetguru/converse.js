@@ -1,6 +1,12 @@
 #conversejs {
     .chat-head-chatroom {
         background-color: $chatroom-head-color;
+        .chatbox-btn {
+            &.button-on {
+                background-color: $chat-head-text-color;
+                color: $chatroom-head-color;
+            }
+        }
 
         .chatroom-topic {
             color: white;
@@ -119,6 +125,14 @@
                     @include calc(height, '100% - #{$chat-head-height}');
                     overflow-y: auto;
                     position: absolute;
+
+                    .chatroom-form {
+                        label,
+                        input[type=text] {
+                            display: block;
+                        }
+                    }
+
                 }
             }
         }

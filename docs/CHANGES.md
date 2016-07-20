@@ -6,9 +6,12 @@
 - Made requesting contacts more visible, by placing them at the top of the roster. [jcbrand]
 - `insertIntoPage` method of `ChatBoxView` has been renamed to `insertIntoDOM`,
   to make it the same as the method of `ChatRoomView`. [jcbrand]
-- Render error messages received from the server (for undelivered chat
-  messages). [jcbrand]
+- Render error messages received from the server (for undelivered chat messages). [jcbrand]
 - Show requesting contacts when filtering by chat state. [jcbrand]
+- In case of a nickname conflict when joining a room, allow the user to choose
+  a new nickname. [jcbrand]
+- Check whether the user has a reserved nickname before entering a room, and
+  use that if it exists. [jcbrand]
 
 ## 1.0.3 (2016-06-20)
 
